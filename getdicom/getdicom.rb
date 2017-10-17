@@ -35,11 +35,11 @@ csv.each do |row|
   prefix = row["number"][0]
 
   case prefix
-    when "2" then dicomclient(row["number"], "PACSPOBLADO", '192.168.2.3')
-    when "3" then dicomclient(row["number"], "PACSCDR", '192.168.3.3')
-    when "4" then dicomclient(row["number"], "PACS80", '192.168.4.3')
-    when "5" then dicomclient(row["number"], "PACSHOSPITAL", '172.28.24.91')
-    when "6" then dicomclient(row["number"], "PACSHOSPITAL", '172.28.24.91')
+    when "2" then dicomclient(row["number"], "PACS2", 'x.x.x.x')
+    when "3" then dicomclient(row["number"], "PACS2", 'x.x.x.x')
+    when "4" then dicomclient(row["number"], "PACS4", 'x.x.x.x')
+    when "5" then dicomclient(row["number"], "PACS5", 'x.x.x.x')
+    when "6" then dicomclient(row["number"], "PACS6", 'x.x.x.x')
   end 
 end
 
